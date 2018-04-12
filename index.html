@@ -5,15 +5,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <link rel="shortcut icon" href="favico.ico" type="image/png" />
+  <title>Paint</title>
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/fontawesome.min.css">
+  <link rel="stylesheet" href="css/fa-regular.min.css">
 </head>
+<link rel="stylesheet" href="css/style.css">
 
 <body>
 
   <div class="controls">
-    <ul class="colors">
+    <ul class="control line-width-items">
+      <li id="line-width-2" class="line-width line-width-2 line-width-active"></li>
+      <li id="line-width-4" class="line-width line-width-4"></li>
+      <li id="line-width-6" class="line-width line-width-6"></li>
+      <li id="line-width-10" class="line-width line-width-10"></li>
+      <li id="line-width-20" class="line-width line-width-20"></li>
+    </ul>
+
+    <ul class="control colors">
       <li id="black" class="color black active-color"></li>
       <li id="white" class="color white"></li>
       <li id="grey" class="color grey"></li>
@@ -22,6 +33,10 @@
       <li id="blue" class="color blue"></li>
       <li id="yellow" class="color yellow"></li>
     </ul>
+
+    <div class="control clear">
+      <i id="clear-canvas" class="far fa-trash-alt"></i>
+    </div>
   </div>
 
   <canvas id="canvas"></canvas>
